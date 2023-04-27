@@ -128,7 +128,7 @@
   padding-bottom: 3%;
   box-shadow: 2px 2px 5px black;
   border-radius: 10px;
-  background-color: green;
+  background-color: #223a66;
   color: white;
   font-family: 'Exo', sans-serif;
   
@@ -145,15 +145,51 @@
 
 .Support
 {
-  border-top: 1px solid black;
-  padding: 20px;
-  font-family: 'Vina Sans', cursive;
-  text-align: left;
-  margin-bottom: 60px;
+  font-family: "Montserrat",sans-serif;
+  padding: 6%;
+
+  
+}
+
+.Support-cont
+{
+  font-family: "Montserrat",sans-serif;
+  padding: 6%;
+
+}
+
+.Support-mail
+{
+  font-family: "Montserrat",sans-serif;
+  padding: 6%;
+  padding-bottom: 20%;
+  border-bottom: 1px solid black;
+}
+
+.add
+{
+  box-shadow: 0 0 0 0px inset,0 0 3px;
+  padding: 8%;
+  
+}
+
+.title-add
+{
+  font-family:monospace;
+  color: #57626c;
+  font-size: medium;
+  text-align: center;  
+  padding-top: 5%;
+
 }
 
 .call
 {
   color: black;
+  font-family: 'Exo', sans-serif;
+}
+
+.label-date
+{
   font-family: 'Exo', sans-serif;
 }

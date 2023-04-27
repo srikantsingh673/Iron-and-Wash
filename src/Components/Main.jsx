@@ -1,6 +1,8 @@
 import React from 'react'
 import { Container, Nav, Navbar, Button, Card, Row, Col, ListGroup } from 'react-bootstrap'
 import { IoCall } from "react-icons/io5";
+import { MdEmail } from "react-icons/md";
+import { IoLocationSharp } from "react-icons/io5";
 import logo from '../Assets/logo.png'
 import washing from '../Assets/washing.png'
 import iron from '../Assets/iron.png'
@@ -8,6 +10,7 @@ import dry from '../Assets/dry_clean.png'
 import shoes from '../Assets/shoe.png'
 import winter from '../Assets/winter.png'
 import miss from '../Assets/misslenious.png'
+import kg from '../Assets/kg.png'
 const Main = () => {
     return (
         <div id='home'>
@@ -65,28 +68,58 @@ const Main = () => {
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col><Card style={{ width: '19rem', marginLeft: '9%', marginTop: '4%' }}>
-                        <img
-                            src={iron}
-                            width="60"
-                            height="60"
-                            className="img"
-                            alt="iron"
-                        />
-                        <Card.Body>
-                            <Card.Title className='title-small'><b>Classic Look</b></Card.Title>
-                            <Card.Title className='title-large'><b>Iron Only</b></Card.Title>
-                            <br /><Card.Text className='title-para'>
-                                <ListGroup variant="flush">
-                                    <ListGroup.Item>T-Shirt/Shirt/Pant : ₹6/piece</ListGroup.Item>
-                                </ListGroup>
-                            </Card.Text>
-                            <a href='/schedule'>
-                                <Button className='s-button'>SCHEDULE PICKUP</Button>
-                            </a>
-                        </Card.Body>
-                    </Card>
+                    <Col>
+                        <Card style={{ width: '19rem', marginLeft: '9%', marginTop: '4%' }} className='card'>
+                            <img
+                                src={kg}
+                                width="60"
+                                height="60"
+                                className="img"
+                                alt="washing"
+                            />
+                            <Card.Body >
+                                <Card.Title className='title-small'><b>Premium Wash</b></Card.Title>
+                                <Card.Title className='title-large'><b>40₹ Per KG</b></Card.Title>
+                                <Card.Text className='title-para'>
+                                    <ListGroup variant="flush">
+                                        <ListGroup.Item>Minimum 4 KG required</ListGroup.Item>
+                                        <ListGroup.Item></ListGroup.Item>
+                                    </ListGroup>
+                                </Card.Text>
+                                <a href='/schedule'>
+                                    <Button className='s-button'>SCHEDULE PICKUP</Button>
+                                </a>
+                            </Card.Body>
+                        </Card>
                     </Col>
+                    <Col>
+                        <Card style={{ width: '19rem', marginLeft: '9%', marginTop: '4%' }}>
+                            <img
+                                src={iron}
+                                width="60"
+                                height="60"
+                                className="img"
+                                alt="iron"
+                            />
+                            <Card.Body>
+                                <Card.Title className='title-small'><b>Classic Look</b></Card.Title>
+                                <Card.Title className='title-large'><b>Wash Only/Iron Only</b></Card.Title>
+                                <br /><Card.Text className='title-para'>
+                                    <ListGroup variant="flush">
+                                        <ListGroup.Item>T-Shirt/Shirt/Pant : ₹8/piece</ListGroup.Item>
+                                        <ListGroup.Item></ListGroup.Item>
+                                    </ListGroup>
+                                </Card.Text>
+                                <a href='/schedule'>
+                                    <Button className='s-button'>SCHEDULE PICKUP</Button>
+                                </a>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+
+                </Row>
+                <Row>
+
                     <Col>
                         <Card style={{ width: '19rem', marginLeft: '9%', marginTop: '4%' }}>
                             <img
@@ -100,42 +133,16 @@ const Main = () => {
                                 <Card.Title className='title-small'><b>Professional</b></Card.Title>
                                 <Card.Title className='title-large'><b>Shoe Cleaning</b></Card.Title><br />
                                 <Card.Text className='title-para'>
-                                    Running/Walking : ₹60
+                                    <ListGroup variant="flush">
+                                        <ListGroup.Item>Pair of shoes : ₹60</ListGroup.Item>
+                                        <ListGroup.Item></ListGroup.Item>
+                                    </ListGroup>
                                 </Card.Text>
                                 <a href='/schedule'>
                                     <Button className='s-button'>SCHEDULE PICKUP</Button>
                                 </a>
                             </Card.Body>
                         </Card>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col><Card style={{ width: '19rem', marginLeft: '9%', marginTop: '4%' }}>
-                        <img
-                            src={dry}
-                            width="60"
-                            height="60"
-                            className="img"
-                            alt="dry"
-                        />
-                        <Card.Body>
-                            <Card.Title className='title-small'><b>Brand New Look</b></Card.Title>
-                            <Card.Title className='title-large'><b>Dry Cleaning</b></Card.Title>
-                            <Card.Text className='title-para'><br />
-                                <ListGroup variant="flush">
-                                    <ListGroup.Item>Aprin/Pant/Shirt : ₹120</ListGroup.Item>
-                                    <ListGroup.Item>Hoodies/Sweater : ₹130</ListGroup.Item>
-                                    <ListGroup.Item>Sweatshirt : ₹100</ListGroup.Item>
-                                    <ListGroup.Item>Blazer : ₹160</ListGroup.Item>
-                                    <ListGroup.Item>Jacket/Light Blanket Single : ₹120</ListGroup.Item>
-                                    <ListGroup.Item>Heavy Blanket Single/Double : ₹200 & ₹350</ListGroup.Item>
-                                </ListGroup>
-                            </Card.Text>
-                            <a href='/schedule'>
-                                <Button className='s-button'>SCHEDULE PICKUP</Button>
-                            </a>
-                        </Card.Body>
-                    </Card>
                     </Col>
                     <Col>
                         <Card style={{ width: '19rem', marginLeft: '9%', marginTop: '4%' }}>
@@ -168,6 +175,36 @@ const Main = () => {
                     <Col>
                         <Card style={{ width: '19rem', marginLeft: '9%', marginTop: '4%' }}>
                             <img
+                                src={dry}
+                                width="60"
+                                height="60"
+                                className="img"
+                                alt="dry"
+                            />
+                            <Card.Body>
+                                <Card.Title className='title-small'><b>Brand New Look</b></Card.Title>
+                                <Card.Title className='title-large'><b>Dry Cleaning</b></Card.Title>
+                                <Card.Text className='title-para'><br />
+                                    <ListGroup variant="flush">
+                                        <ListGroup.Item>Aprin/Pant/Shirt : ₹120</ListGroup.Item>
+                                        <ListGroup.Item>Hoodies/Sweater : ₹130</ListGroup.Item>
+                                        <ListGroup.Item>Sweatshirt : ₹100</ListGroup.Item>
+                                        <ListGroup.Item>Blazer : ₹160</ListGroup.Item>
+                                        <ListGroup.Item>Jacket/Light Blanket Single : ₹120</ListGroup.Item>
+                                        <ListGroup.Item>Heavy Blanket Single/Double : ₹200 & ₹350</ListGroup.Item>
+                                    </ListGroup>
+                                </Card.Text>
+                                <a href='/schedule'>
+                                    <Button className='s-button'>SCHEDULE PICKUP</Button>
+                                </a>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <Card style={{ width: '19rem', marginLeft: '9%', marginTop: '4%' }}>
+                            <img
                                 src={miss}
                                 width="60"
                                 height="60"
@@ -196,18 +233,32 @@ const Main = () => {
                 </Row>
             </Container>
             <br /><br /><br />
-            <Container>
+            <Container >
                 <Row className='Support' id='Support'>
+                </Row>
+                <Col className='add'>
+                <IoLocationSharp/>
+                <h5><strong>Our Location</strong></h5>
+                    <p className='title-add'><b>Gharaun , S.A.S Nagar Mohali, Punjab 140413</b></p>
+                </Col>
+                <Row className='Support-cont'>
                     <Col>
-                        <h4>Support Helpline</h4>
-                        <strong><a href="tel:7988606676" className='call'><IoCall />&nbsp;&nbsp;7988606676</a><br /></strong><br />
+                        <h6>Support Helpline</h6>
+                        <IoCall/> <a href="tel:7988606676">7988606676 </a>
+
                     </Col>
                     <Col>
-                    <h4>Pickup Helpline</h4>
-                    <strong><a href="tel:7988606676" className='call'><IoCall />&nbsp;&nbsp;7988606676</a><br /></strong><br />
+                    <h6>Pickup Helpline</h6>
+                        <IoCall/> <a href="tel:9501456130">9501456130</a>
                     </Col>
                 </Row>
-            </Container>
+                <Row className='Support-mail'>
+                    <Col>
+                        <h6>Email Address</h6>
+                        <MdEmail/><a href="mailto: ironandwash21@gmail.com"> ironandwash@gmail.com</a>
+                    </Col>
+                </Row>
+            </Container><br />
             <div >
             </div><br />
             <div className="footer__copyright">
