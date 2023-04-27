@@ -10,7 +10,6 @@ import dry from '../Assets/dry_clean.png'
 import shoes from '../Assets/shoe.png'
 import winter from '../Assets/winter.png'
 import miss from '../Assets/misslenious.png'
-import kg from '../Assets/kg.png'
 const Main = () => {
     return (
         <div id='home'>
@@ -70,16 +69,12 @@ const Main = () => {
                     </Col>
                     <Col>
                         <Card style={{ width: '19rem', marginLeft: '9%', marginTop: '4%' }} className='card'>
-                            <img
-                                src={kg}
-                                width="60"
-                                height="60"
-                                className="img"
-                                alt="washing"
-                            />
+                            <div className="img">
+                            <h1><strong> &nbsp; &nbsp;K G</strong></h1>
+                            </div>
                             <Card.Body >
-                                <Card.Title className='title-small'><b>Premium Wash</b></Card.Title>
-                                <Card.Title className='title-large'><b>40₹ Per KG</b></Card.Title>
+                                <Card.Title className='title-small'><b>WASH + IRON</b></Card.Title>
+                                <Card.Title className='title-large'><b>45₹ Per KG</b></Card.Title>
                                 <Card.Text className='title-para'>
                                     <ListGroup variant="flush">
                                         <ListGroup.Item>Minimum 4 KG required</ListGroup.Item>

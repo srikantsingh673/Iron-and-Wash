@@ -88,7 +88,7 @@ export default function App() {
               </div>
               <div className="label-select">
                 <label>No. of Items</label><br />
-                <input className='label' placeholder="Count or Weight" name="Count" type="number" required />
+                <input className='label' placeholder="Count" name="Count" type="number" required />
               </div>
               <div className="label-select">
                 <label for="cars">Pickup time</label><br />
