@@ -1,8 +1,7 @@
-
-.App {
+.App
+{
   text-align: center;
 }
-
 .head {
   font-family: monospace;
 }
@@ -55,7 +54,8 @@
 
 .button
 {
-  background-color: #223a66;
+  background-color: #306cdd;
+
   font-family: 'Exo', sans-serif;
   height:60px;
   width: 90%;
@@ -63,14 +63,18 @@
   box-shadow: 1px 1px 5px black;
 }
 
+.button:hover {background-color:#223a66}
+
 .s-button
 {
-  background-color: #223a66;
+  background-color: #306cdd;
   font-family: 'Exo', sans-serif;
   font-size:small;
   box-shadow: 3px 3px 3px;
   border-radius: 15px;
 }
+
+.s-button:hover {background-color:#223a66}
 
 .form-face
 {
@@ -128,11 +132,12 @@
   padding-bottom: 3%;
   box-shadow: 2px 2px 5px black;
   border-radius: 10px;
-  background-color: #223a66;
+  background-color: #306cdd;
   color: white;
-  font-family: 'Exo', sans-serif;
-  
+  font-family: 'Exo', sans-serif;  
 }
+
+.sch-button:hover {background-color:#223a66}
 .form-starter
 {
   position: inherit;
@@ -147,7 +152,7 @@
 {
   font-family: "Montserrat",sans-serif;
   padding: 6%;
-
+  text-align: center;
   
 }
 
@@ -190,6 +195,23 @@
 }
 
 .label-date
+{
+  font-family: 'Exo', sans-serif;
+}
+
+.map
+{
+  position: inherit;
+}
+
+.result
+{
+  text-align: center;
+  margin: 10%;
+  margin-top: 20%;  
+}
+
+.title-result
 {
   font-family: 'Exo', sans-serif;
 }

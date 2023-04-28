@@ -1,40 +1,16 @@
 import React from 'react'
-import { Container, Nav, Navbar, Button, Card, Row, Col, ListGroup } from 'react-bootstrap'
-import { IoCall } from "react-icons/io5";
-import { MdEmail } from "react-icons/md";
-import { IoLocationSharp } from "react-icons/io5";
-import logo from '../Assets/logo.png'
+import { Container, Button, Card, Row, Col, ListGroup } from 'react-bootstrap'
 import washing from '../Assets/washing.png'
 import iron from '../Assets/iron.png'
 import dry from '../Assets/dry_clean.png'
 import shoes from '../Assets/shoe.png'
 import winter from '../Assets/winter.png'
 import miss from '../Assets/misslenious.png'
+
+
 const Main = () => {
     return (
-        <div id='home'>
-            <Navbar bg="none" expand="lg">
-                <Container>
-                    <Navbar.Brand href="/">
-                        <img
-                            src={logo}
-                            width="30"
-                            height="30"
-                            className="d-inline-block align-top"
-                            alt="React Bootstrap logo"
-                        />&nbsp;&nbsp;
-                        <strong>Iron and Wash </strong>
-                    </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
-                            <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="#pricing">Pricing</Nav.Link>
-                            <Nav.Link href="#Support">Support</Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
+        <div id='home'  className='App'>
             <div className='button-div'>
                 <a href='/schedule'>
                     <Button className='button'> SCHEDULE PICKUP </Button>
@@ -70,7 +46,7 @@ const Main = () => {
                     <Col>
                         <Card style={{ width: '19rem', marginLeft: '9%', marginTop: '4%' }} className='card'>
                             <div className="img">
-                            <h1><strong> &nbsp; &nbsp;K G</strong></h1>
+                                <h1><strong> &nbsp; &nbsp;K G</strong></h1>
                             </div>
                             <Card.Body >
                                 <Card.Title className='title-small'><b>WASH + IRON</b></Card.Title>
@@ -228,38 +204,6 @@ const Main = () => {
                 </Row>
             </Container>
             <br /><br /><br />
-            <Container >
-                <Row className='Support' id='Support'>
-                </Row>
-                <Col className='add'>
-                <IoLocationSharp/>
-                <h5><strong>Our Location</strong></h5>
-                    <p className='title-add'><b>Gharaun , S.A.S Nagar Mohali, Punjab 140413</b></p>
-                </Col>
-                <Row className='Support-cont'>
-                    <Col>
-                        <h6>Support Helpline</h6>
-                        <IoCall/> <a href="tel:7988606676">7988606676 </a>
-
-                    </Col>
-                    <Col>
-                    <h6>Pickup Helpline</h6>
-                        <IoCall/> <a href="tel:9501456130">9501456130</a>
-                    </Col>
-                </Row>
-                <Row className='Support-mail'>
-                    <Col>
-                        <h6>Email Address</h6>
-                        <MdEmail/><a href="mailto: ironandwash21@gmail.com"> ironandwash@gmail.com</a>
-                    </Col>
-                </Row>
-            </Container><br />
-            <div >
-            </div><br />
-            <div className="footer__copyright">
-                <small>Design & Developed by <a href='https://www.instagram.com/the_rishu0p/'> Rishu </a></small><br />
-                <small>&copy; ironandwash.com</small>
-            </div>
         </div>
     )
 }
