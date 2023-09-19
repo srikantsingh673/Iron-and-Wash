@@ -49,7 +49,6 @@ export default function App() {
               <div className="label-select">
                 <label for="cars">Service Type</label><br />
                 <select name="Service_type" required>
-                  <option className='label-option' value="Per Pcs"> Per Pcs </option>
                   <option className='label-option' value="Per KG"> Per KG </option>
                 </select><br /><br />
               </div>
@@ -58,7 +57,6 @@ export default function App() {
                 <select name="Service" required>
                   <option className='label-option' value="Wash & Iron"> Wash & Iron </option>
                   <option className='label-option' value="Wash Only"> Wash Only </option>
-                  <option className='label-option' value="Iron Only"> Iron Only </option>
                   <option className='label-option' value="Dry Clean"> Dry Clean </option>
                   <option className='label-option' value="Shoe Cleaning"> Shoe Cleaning </option>
                 </select><br /><br />
@@ -70,7 +68,10 @@ export default function App() {
               <div className="label-select">
                 <label for="cars">Pickup time</label><br />
                 <select name="Pickup_time" required>
-                  <option className='label-option' value="8:00PM - 10:00PM">8:00PM - 10:00PM</option>
+                  <option className='label-option' value="8:00AM - 12:00PM">8:00AM - 12:00PM</option>
+                  <option className='label-option' value="12:00PM - 4:00PM">12:00PM - 4:00PM</option>
+                  <option className='label-option' value="4:00PM - 8:00PM">4:00PM - 8:00PM</option>
+                  <option className='label-option' value="8:00PM - 11:00PM">8:00PM - 11:00PM</option>
                 </select><br /><br />
                 <div className="label-select">
                   <label>Date</label><br />

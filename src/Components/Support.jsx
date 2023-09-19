@@ -19,18 +19,18 @@ const Support = () => {
                 <Row className='Support-cont'>
                     <Col>
                         <h6>Support Helpline</h6>
-                        <IoCall /> <a href="tel:7988606676">7988606676 </a>
+                        <IoCall /> <a href="tel:8264145099">8264145099 </a>
 
                     </Col>
                     <Col>
                         <h6>Pickup Helpline</h6>
-                        <IoCall /> <a href="tel:9501456130">9501456130</a>
+                        <IoCall /> <a href="tel:9056185338">9056185338</a>
                     </Col>
                 </Row>
                 <Row className='Support-mail'>
                     <Col>
                         <h6>Email Address</h6>
-                        <MdEmail /><a href="mailto: ironandwash21@gmail.com"> ironandwash@gmail.com</a>
+                        <MdEmail /><a href="mailto: ironandwash@gmail.com"> ironandwash@gmail.com</a>
                     </Col>
                 </Row>
             </Container><br />
